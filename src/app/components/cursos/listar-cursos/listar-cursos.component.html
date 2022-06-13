@@ -1,0 +1,10 @@
+<div class="card mt-5" style="width: 18rem;">
+  <img [src]="foto" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{nome}}</h5>
+    <p class="card-text">{{descricao}}</p>
+    <p *ngIf="promocao"><span class="badge badge-success">Promoção</span></p>
+    <a href="#" class="btn btn-primary float-right">R${{preco}}</a>
+    <a  class="btn btn-primary float-left" (click)="clicar()">Clique Aqui</a>
+  </div>
+</div>
